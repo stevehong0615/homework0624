@@ -1,13 +1,13 @@
 <?php
 $a = 20;
-function myfunction($b) {
-	//print "a=$a<br>";
+function myFunction($b) {
+	//echo "a = $a<br>";
 	$a = 30;
-	//print "a=$a<br>";
+	//echo "a = $a<br>";
 	global $a, $c;  // 呼叫全域變數的$a, $a = 20, 再設一個全域變數 $c
-	//print "a=$a<br>";
+	//echo "a = $a<br>";
 	return $c = ($b + $a);  // $b = 40
-	
 }
-print myfunction(40) + $c;
+// 請預測答案是多少?
+echo myFunction(40) + $c;
 ?>
